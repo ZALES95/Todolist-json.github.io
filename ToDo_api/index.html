@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+     <meta charset="UTF-8">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Projekt 1</title>
+     <meta name="description" content="Mundial 2022, Katar, Piłka Nożna">
+     <meta name="keywords" content="słowa kluczowe">
+     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/f5d39d5d44.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+
+     <div class="todo">
+          <div class="header">
+               <h1>ToDo List</h1>
+               <input type="text" class="todo-input" placeholder="Wpisz treść zadania...">
+               <select class="todo-priority" id="priority-list">
+                    <option value="1" selected>low</option>
+                    <option value="2">medium</option>
+                    <option value="3">high</option>
+               </select>
+               <button class="btn-add">Add</button>
+          </div>
+          <div class="todolist">
+               <h3>Lista zadań:</h3>
+               <p class="error-info">Brak zadań na liście.</p>
+               <ul>
+                    <!-- <li data-id='test1'>Wypić kawę
+                         <div class="tools">
+                              <button class="complete"><i class="fas fa-check"></i></button>
+                              <button class="edit">EDIT</button>
+                              <button class="delete"><i class="fas fa-times"></i></button>
+                         </div>
+                    </li>
+                    <li data-id='test2'>Zjeść śniadanie
+                         <div class="tools">
+                              <button class="complete"><i class="fas fa-check"></i></button>
+                              <button class="edit">EDIT</button>
+                              <button class="delete"><i class="fas fa-times"></i></button>
+                         </div>
+                    </li>
+                    <li data-id='test3'>Umyć okna
+                         <div class="tools">
+                              <button class="complete"><i class="fas fa-check"></i></button>
+                              <button class="edit">EDIT</button>
+                              <button class="delete"><i class="fas fa-times"></i></button>
+                         </div>
+                    </li> -->
+               </ul>
+          </div>
+     </div>
+
+     <div class="popup">
+          <h3>Edytuj zadanie:</h3>
+          <div class="popup-body">
+               <p class="popup-info"></p>
+               <input type="text" class="popup-input" placeholder="Wprowadź nową treść zadania...">
+               <select class="popup-priority" id="popup-priority-list">
+                    <option value="1" selected>low</option>
+                    <option value="2">medium</option>
+                    <option value="3">high</option>
+               </select>
+               <button class="popup-btn accept">Zatwierdź</button>
+               <button class="popup-btn cancel">Anuluj</button>
+          </div>
+     </div>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+          </script>
+
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+     <script src="dist/js/main.min.js"></script>
+
+</body>
+
+</html>
